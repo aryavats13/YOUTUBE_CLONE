@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           .header{
+            position: fixed;
+            top:0;
+            right: 0;
+            left: 0;
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 10px;
+           }
+           .left-section{
+            
+            display: flex;
+            align-items: center;}
+
+            .hamburger-menu{
+            height: 24px;
+            margin-left: 24px;
+            margin-right: 24px ;
+           }
+
+           .youtube-logo{
+            height: 20px;
+           }
+           
+        
+           .middle-section{
+            
+            flex:1;
+            display: flex;
+            margin-left: 70px;
+            margin-right: 35px;
+            max-width: 500px;
+            align-items: center;
+           }
+           
+           
+           .search-bar{
+            flex: 1;
+            height: 35px;
+            border-color: rgb(192,192, 192);
+            border-style: solid;
+            padding-left: 10px;
+            font-size: 16px;
+            border-width: 1px;
+            border-radius: 2px;
+            box-shadow: inset 1px 2px 3px rgb(0,0,0,0.05);
+            width:0;
+            
+           }
+           .search-logo{
+            align-items: center;
+            height: 20px
+           }
+           .search-button{
+            height: 40px;
+            width: 66px;
+            background-color: rgb(240, 240, 240);
+            border-width: 1px;
+            border-color: rgb(192,192, 192);
+            border-style: solid;
+            margin-left: -1px;
+            margin-right: 10px;
+           }
+           .search::placeholder{
+            font-family: roboto;
+            font-size: 16px;
+            
+           }
+           
+           .voice-button{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(245, 245, 245);
+           }
+           .voice-icon{
+            height: 25px;
+            margin-left:4px;
+           }
+           .right-section{
+            width: 180px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 0;
+           }
+
+            .upload-icon{
+                height: 24px;
+            }
+            
+            .youtube-app-icon{
+                height: 24px;
+            }
+            .notification-icon{
+                height: 24px;
+            }
+            .current-user-picture {
+                height: 32px;
+                border-radius: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+       <div class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="icon/hamburger-menu.svg">
+            <img class="youtube-logo" src="icon/youtube-logo.svg">
+        </div>
+        <div class="middle-section"><input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+            <img class="search-logo" src="icon/search-logo.svg">
+        </button>
+        <button class="voice-button">
+            <img class="voice-icon" src="icon/voice-icon.svg">
+        </button>
+        </div>
+        <div class="right-section" >
+            <img class="upload-icon" src="icon/upload-logo.svg">
+            <img class="youtube-app-icon" src="icon/youtube-apps.svg">
+            <img class="notification-icon" src="icon/notifications.svg">
+            <img class="current-user-picture" src="icon/profile-logo.jpg">
+        </div>
+       </div>
+    </body>
+</html>
